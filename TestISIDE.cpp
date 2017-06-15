@@ -19,24 +19,7 @@ int main()
 	fichierLu = readdir(rep);
 	fichierLu = readdir(rep);
 	fichierLu = readdir(rep);
-	while((fichierLu = readdir(rep)) != NULL)
-	{
-		char str[100];
-		strcpy(str,"files/blocks/Alphabet3/");
-		strcat(str,fichierLu->d_name);
-		char str2[100];
-		strcpy(str2,"files/blocks/Alphabet3/N_");
-		strcat(str2,fichierLu->d_name);
-
-		ifstream fichier(str, ios::in);
-		ofstream fichier2(str2,ios::out | ios::trunc);
-		int proba;
-		int i = 0;
-		int j = 0;
-		std::string a,b,c,d,e,f,g,h,k,l;
-		if(fichier)
-		{
-			while (!fichier.eof())
+	while((fichierLu = readdir(rep)) != NULL
 			{
 		
 		        	string chaine1, chaine2;
